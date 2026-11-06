@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PulseWatch · Uptime monitoring for websites and APIs</title>
+<meta name="description" content="PulseWatch checks your websites and APIs every minute and alerts you the moment something breaks.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h4l2.5-7 4 14 3-9 1.5 2H22"/></svg>PulseWatch</a><nav><a href="/#status">Status</a><a href="/#start">Get started</a></nav></div></header>
+<main class="wrap">
+<section class="hero" id="start">
+<h1>Know the moment your site goes down.</h1>
+<p class="lead">PulseWatch checks your websites and APIs every minute from 12 regions and alerts you before your users notice.</p>
+<form class="signup" id="signup">
+<input type="email" id="email" placeholder="you@company.com" autocomplete="email" aria-label="Email address" required>
+<button class="btn" id="go" type="submit">Get started free</button>
+</form>
+<p class="hint" id="hint">No credit card required. We email you a sign-in link.</p>
+</section>
+<section class="grid">
+<div class="card"><h3>Checks every minute</h3><p>HTTP, TCP, ping and keyword checks from multiple regions, so a single flaky route never wakes you up.</p></div>
+<div class="card"><h3>Alerts where you work</h3><p>Email, Slack, Telegram and webhooks, with escalation rules and quiet hours.</p></div>
+<div class="card"><h3>Public status pages</h3><p>Share a status page with your customers and publish incident updates in one click.</p></div>
+</section>
+<section class="card" id="status">
+<h2>PulseWatch status</h2>
+<span class="pill"><span class="dot"></span>All systems operational</span>
+<div class="stats">
+<div class="stat"><b id="uptime">—</b><span>Uptime, last 90 days</span></div>
+<div class="stat"><b id="streak">—</b><span>Days since last incident</span></div>
+<div class="stat"><b id="probes">—</b><span>Probes connected now</span></div>
+</div>
+<div class="bars" id="bars" aria-label="Daily status for the last 90 days"></div>
+<div class="axis"><span>90 days ago</span><span>Today</span></div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 PulseWatch</span><span><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/#status">Status</a></span></div></footer>
+<script src="/app.js"></script>
+</body>
+</html>
